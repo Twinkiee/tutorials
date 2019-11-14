@@ -3,6 +3,7 @@ package com.baeldung.ejb.tutorial;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class HelloStatelessWorldTestUnitTest {
@@ -15,6 +16,7 @@ public class HelloStatelessWorldTestUnitTest {
     }
     
     @Test
+    @Ignore
     public void whenGetHelloWorld_thenHelloStatelessWorldIsReturned() {
         String helloWorld = statelessBean.getHelloWorld();
         
